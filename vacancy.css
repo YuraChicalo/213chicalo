@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background: url(fons/texture-1099399_1280.jpg);
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.head{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: beige;
+    margin-left: 36px; 
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: beige;
+    text-decoration: none;
+}
+.d1{
+    width: 100%;
+    margin-top: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cont1, .cont2, .cont3, .cont4{
+    width: 600px;
+    height: auto;
+    margin: 15px 15px 15px 50px;
+}
+img{
+    width: 600px;
+    height: auto;
+}
+
+@media screen and (max-width: 730px){
+   .head{
+    font-size: 20px;
+    margin-left: 10px; 
+}
+a{
+    font-size: 15px;
+  } 
+}
+
+@media screen and (max-width: 730px){
+    .cont1, .cont2, .cont3, .cont4{
+    width: 475px;
+    margin: 15px 15px 15px 10px;
+  }
+    img{
+    width: 475px;
+  }
+}
+
+
+
+

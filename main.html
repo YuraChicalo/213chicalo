@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="b1">
+                <h1><span>R</span>ESTAURANT "CHERRY"</h1>
+            <p class="verh">Welcome to our restaurant</p>
+            </div>
+            <div class="knopka">
+                <button id="switch">Black theme</button>
+            </div>
+            <div class="b2">
+                <form action="">
+                <input type="text" name="search" placeholder="Search a food..." class="in1">
+            </form>
+            <div class="header2">
+                <a href="" onmouseover="isValidSear()"><img src="images/search.png" alt="Search" class="imsearch"></a>
+            </div>
+            <script>
+                function isValidSear() {
+                    var search = document.getElementsByName("search")[0].value;
+
+                    if (isNaN(search) == false) {
+                        alert("You entered incorrect data");
+                    } else {
+                        alert("Please, wait");
+                    }
+                }
+            </script>
+            </div>
+        </div> <!-- header1 -->
+    </header>
+    <div class="container">
+        <div class="header3">
+            <div class="ab">
+                <h2 class="eaten"><span>E</span>aten berry<br><span class="and">and go for a walk</span></h2>
+            <h3 class="today">About us...</h3>
+            </div>
+            <div class="lor">
+            <p class="lorem">The Cherry restaurant is a restaurant that has an atmosphere of hospitality. The concept of cuisine is the freshest food presented through the art of European, Japanese and refined Ukrainian gastronomy. Our dishes and various drinks presented in the menu will satisfy the most demanding gourmets and will not leave them indifferent. A careful and unobtrusive service will help you forget about everyday problems.</p>
+            </div>
+        </div>
+         <div class="cont">
+           <div class="levuy"></div>
+            <div class="men">
+                <div class="pynkt"><a href="main.html" class="a1">Home</a></div>
+                <ul class="nav_menu">
+                <li class="main-menu">
+                    <a href="menu.html" class="a1"><p>Menu</p></a>
+                    <p>Schedule</p>
+                    <p>Shop</p>
+                    <p>Forum</p>
+                </li>
+            </ul>
+                <div class="pynkt"><a href="podii.html" class="a1">Events</a></div>
+                <div class="pynkt"><a href="vacancy.html" class="a1">Vacancies</a></div>
+                <div class="pynkt"><a href="contacts.html" class="a1">Contacts</a></div>
+                <div class="pynkt"><a href="feedback.html" class="a1">Feedback</a></div>
+                <div class="pynkt1"></div>
+            </div>
+                 </div> 
+        <div class="nav">
+            <p class="thispage"><a href="" class="a2">Home</a> / <a href="" class="a2">Another Page</a> / This page</p>
+        </div>
+        <div class="aside">
+            <div class="leftside">
+                <div class="res">
+                    <p class="contact">Reservation</p><br>
+                <form action="">
+                    <input type="text" name="nam" placeholder="Your Name" class="in2"><br><br>
+                    <input type="text" name="daytnum" placeholder="Number of telephone" class="in3"><br><br>
+                    <input type="email" name="mail" placeholder="Email Address" class="in4"><br><br>
+                    <input type="text" name="time" placeholder="Time" class="in5"><br><br>
+                    <select> 
+<option value="">Kind of table</option>
+<option value="">Default</option>
+<option value="">VIP</option>   
+</select><br><br>
+                    <select> 
+<option value="">Number of people</option>
+<option value="">10-20</option>
+<option value="">20-40</option>
+<option value="">40-60</option>    
+</select><br><br>
+                    <input type="submit" onclick="isValidData()" value="Reserve" class="in6">
+                </form>
+                <script>
+                    function isValidData() {
+                        var nam = document.getElementsByName("nam")[0].value;
+                        var daytnum = document.getElementsByName("daytnum")[0].value;
+                        var mail = document.getElementsByName("mail")[0].value;
+                        var time = document.getElementsByName("time")[0].value;
+
+                        if (isNaN(nam) == false) {
+                            alert("You entered incorrect name");
+                        } else if (isNaN(daytnum) == true || daytnum.length < 10) {
+                            alert("You entered incorrect number");
+                        } else if (mail.indexOf("@") == -1) {
+                            alert("You entered incorrect email");
+                        } else if (time < 0 || time > 24) {
+                            alert("You entered incorrect time");
+                        } else {
+                            alert("Reservation is ongoing");
+                        }
+                    }
+                </script>
+                </div>
+                <div class="desc">
+                    <h2 class="headln">Warning</h2>
+            <p class="lid">
+                To take the reservation, you must come to restaurant one hour before the reservation and take it. Otherwise the reservation will be canceled and we will refund you half the money.</p>
+            <a href="https://www.k1.ua/uk/about/news/2015/05/18/10_pravyl_etyketu_chastyna_1" class="a3">More about this</a>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="text">
+                    <h2 class="what"><span>W</span>hat We Do...</h2><br>
+            <p class="afterwhat">We are Ukrainian restaurant for tourists. Our restaurant have professional light and sound equipment provides an organic mix of contemporary design solutions and antique attributes. In addition, we use light and sound for zoning the institution. Each zone is sounded individually, so we can adjust volume to create comfortable conditions for communication and at the same time to reveal the beauty of musical compositions that will be heard. The new restaurant of the Cherry club has a unique media system specially designed for our institution.</p>
+                </div>
+                <div class="im">
+                    <div class="im1">
+                        <h3 class="adm" id="asv">Photos</h3>
+                        <img src="images/photo.jpg" alt="photos" id="threeim" class="admin">
+                    </div>
+                    <div class="im2">
+                        <h3 class="shor" id="asv">Videos</h3>
+                        <img src="images/video.jpg" alt="videos" id="threeim" class="short">
+                    </div>
+                    <div class="im3">
+                        <h3 class="vid" id="asv">Other</h3>
+                        <img src="images/other.jpg" alt="other" id="threeim" class="video">
+                    </div>
+                    <div class="vuniatok"></div>
+                </div>
+                <div class="hist">
+                    <h2 class="what"><span>H</span>istory of restaurant</h2><br>
+                    <p class="histofres">
+                        Until the XVIII century. restaurant business everywhere was in a primitive state, limited to the service of roadside and city restaurants, taverns and similar establishments not the most aristocratic property. They rarely dared to visit married couples and even less often - women. Aristocratic circles of the population treated home cooks and dinners at secular receptions. Such conditions limited the development of the culinary business and the formation of service standards of public eating. Mentioned only one restaurant type - Tour d 'Argent, opened in 1533 in France and claimed a high level of service.
+
+The era of stagecoach significantly increased the mobility of the population, and the growth of urban population in the XVIII-XIX centuries. demanded for establishments and catering services. The revolution in the field of restaurant service was carried out by France, which has already developed a tradition of a special attitude to the art of cooking.
+
+Michele Boulanger, owner of a tavern in Paris, should be called the "father of the restaurant". The situation in this area of business was compounded by the dominance of the butchers' guild, which restricted the ability to cook and sell meat dishes while maintaining a medieval type of guild monopoly. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+        <table>
+                <tr>
+                    <th class="line1 rad1">№</th>
+                    <th class="line2">Name of dish</th>
+                    <th class="line3">What this contain</th>
+                    <th class="line3">Weight</th>
+                    <th class="line2 rad2">Price</th>
+                </tr>
+
+                <tr>
+                    <td class="line1 alig">1</td>
+                    <td class="line2">English breakfast</td>
+                    <td class="line3">Omelet with tomatoes, sausages, bacon, fresh vegetable salad, beans</td>
+                    <td class="line3">540 gr</td>
+                    <td class="line2"><a href="" class="tables">5$</a></td>
+                </tr>
+
+                <tr>
+                    <td class="line1 alig">2</td>
+                    <td class="line2">Scrambled eggs with tomatoes</td>
+                    <td class="line3">Chicken eggs fried with tomatoes</td>
+                    <td class="line3">165 gr</td>
+                    <td class="line2"><a href="" class="tables">1.5$</a></td>
+                </tr>
+
+                <tr>
+                    <td class="line1 alig">3</td>
+                    <td class="line2">Miso soup</td>
+                    <td class="line3">Traditional Japanese Soup</td>
+                    <td class="line3">205gr</td>
+                    <td class="line2"><a href="" class="tables">1$</a></td>
+                </tr>
+
+                <tr>
+                    <td class="line1 alig">4</td>
+                    <td class="line2">Udon soup</td>
+                    <td class="line3">Chicken soup, Udon noodles, Wakame seaweed and egg</td>
+                    <td class="line3">340 gr</td>
+                    <td class="line2"><a href="" class="tables">2.5$</a></td>
+                </tr>
+
+                <tr>
+                    <td class="line1 alig">5</td>
+                    <td class="line2">Rice with spinate</td>
+                    <td class="line3">Rice, spinach, cream</td>
+                    <td class="line3">150gr</td>
+                    <td class="line2"><a href="" class="tables">1.5$</a></td>
+                </tr>
+
+                <tr>
+                    <td class="line1 alig">6</td>
+                    <td class="line2">Tyachan</td>
+                    <td class="line3">Fried rice with vegetables and egg</td>
+                    <td class="line3">175gr</td>
+                    <td class="line2"><a href="" class="tables">2$</a></td>
+                </tr>
+
+                <tr>
+                    <td class="line1 rad3 alig">7</td>
+                    <td class="line2">Strawberry dessert</td>
+                    <td class="line3">A wonderful strawberry dessert with a ball of ice cream.</td>
+                    <td class="line3">140gr</td>
+                    <td class="line2 rad4"><a href="" class="tables">2$</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="linia"></div>
+    <footer>
+        <div class="block">
+            <div class="block1">
+                <h2 class="cherryh"><span>C</span>HERRY Hour</h2>
+                <div class="hr"></div><br>
+                <p class="weare">We are open 24/7</p><br>
+                <ul>
+                    <li class="clocks">Nights! Absolutely No Extra Charge</li>
+                    <li class="clocks">Weekends! Absolutely No Extra Charge</li>
+                    <li class="clocks">Holidays! Absolutely No Extra Charge</li>
+                </ul>
+            </div>
+            <div class="block2">
+                <h2 class="cherryh">Local <span>C</span>HERRY</h2>
+                <div class="hr"></div><br>
+                <ul>
+                    <li class="num"><span class="number">Lviv cite (032) 221-1107</span></li>
+                    <li class="num"><span class="number">Kyiv city (032) 202-5428</span></li>
+                    <li class="num"><span class="number">Ternopil city (032) 296-2664</span></li>
+                    <li class="num"><span class="number">Odesa city (032) 531-5083</span></li>
+                    <li class="num"><span class="number">Kharkiv city (032) 389-4381</span></li>
+                </ul>
+                <p class="callus" id="call">Call To Us Free 0-800-210-100</p>
+            </div>
+            <div class="block3">
+                <h2 class="cherryh">Our LA main office Location</h2>
+                <div class="hr"></div><br>
+                <p class="weare">Yura Chicalo<br> Hi-Tech Cherry Company<br>
+                    <a href="https://www.google.com/intl/ru/gmail/about/" class="tables">infocherry@gmail.com</a><br> 5104 W. Washington Blvd<br> Los Angeles , CA , 90016 United States<br> (800) 287-0919
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
