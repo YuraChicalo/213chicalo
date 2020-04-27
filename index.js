@@ -8,6 +8,9 @@ const text1 = document.querySelector(".afterwhat");
 const text2 = document.querySelector(".histofres");
 const text3 = document.querySelector(".lid");
 
+const black = "#5c646e";
+
+
 //IIFD
 (function () {
   let isBlack = true;
@@ -17,9 +20,9 @@ const text3 = document.querySelector(".lid");
     isBlack = !isBlack;
 
     if (isBlack) {
-      changeTheme("Black theme", "#e2e2e9", "white", "#f3f3f3", "url(images/input.png)", "1px solid #d8dbde", "5px solid white", "#5c646e", "#5c646e", "#5c646e");
+      changeTheme("Black theme", "#e2e2e9", "white", "#f3f3f3", "url(images/input.png)", "1px solid #d8dbde", "5px solid white", black,black, black);
     } else {
-      changeTheme("Light theme", "#4e5243", "#8c03fc", "#fcd303", "#fc5e03", "1px solid black", "2px solid black", "black", "black", "black");
+      changeTheme("Light theme", "#544f6e", "#68628a", "#8379b8", "#8379b8", "1px solid black", "2px solid black", "black", "black", "black");
     }
   });
 })();
